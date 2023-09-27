@@ -1,0 +1,21 @@
+/* Selecciona elementos dentro de otro (cualquier nivel) */
+div#div1 a{ /* rojo a todos los elementos a que estén dentro del elemento div id=div1 */
+    color: red;
+}
+/* Selecciona elementos hijos directos (primer nivel) */
+#div1 > a{ /* le pone un fondo verde solo a los hijos directos del div1 que son enlaces*/
+    background: green; 
+}
+/* Selecciona elementos contiguos a otros (mismo nivel) */
+#adios + a{ /* Ponemos fondo naranja a los hermanos contiguos (a continuación) de a cuya clsae sea .normalLink */
+    background: orange;
+}
+/* Selecciona elementos que siguen a otros (mismo nivel) */
+div ~ p{ /* No es necesario que sean adyacentes, absta que esté a continuación y sean hermanos */
+    color: green;
+}
+/* Selecciona todos los elementos (cualquier nivel) */
+* { /* Elimina márgenes y rellenos de todos los elementos de un documento HTML */
+    margin: 0;
+    padding: 0;
+  }

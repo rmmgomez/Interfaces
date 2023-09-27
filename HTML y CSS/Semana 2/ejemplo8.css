@@ -1,0 +1,15 @@
+[href]{
+    text-decoration: none;
+}
+[class="especial"]{
+    color: green;
+}
+[href*=es]{
+    background-color: gainsboro;
+}
+[title$="educacion"]{
+    text-shadow: 5px 5px 5px pink;
+}
+[title^="Ir a"]{
+    text-transform: uppercase; 
+}

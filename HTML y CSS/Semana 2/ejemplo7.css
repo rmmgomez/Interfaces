@@ -1,0 +1,13 @@
+strong:first-child{
+    background-color:blue;}
+strong:last-child{
+    background-color:green;}
+strong:first-of-type{
+    background-color: yellow;
+}
+strong:nth-of-type(2){
+    background-color: green;
+}
+strong:nth-last-of-type(1){
+    background-color: blue;
+}

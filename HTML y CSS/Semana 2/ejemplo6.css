@@ -1,0 +1,25 @@
+a:link{ /* Sin visitar */
+    color: aquamarine;
+    font-weight: bolder;
+}
+
+a:hover{
+    color: black;
+    text-decoration: dotted;
+}
+
+input:focus{
+    border: 2px dotted #4C4;
+}
+
+
+button:disabled{
+    background-color: pink;
+}
+
+input:required{
+    border: 2px dotted red;
+}
+a:not(.especial) { /* Todo div que no sea container */
+    border: 2px solid blue;
+}

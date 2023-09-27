@@ -1,0 +1,13 @@
+p {
+    color: red;
+}
+#p1 {
+    color: green;
+}
+.class1 {
+    color: blue;
+}
+
+button.classic.primary.large {
+    /* Estilos CSS para aquellos elementos button que contengan todas esas clases */
+  }

@@ -1,0 +1,41 @@
+@font-face { /* Fuente externa */
+    font-family: LetraEnlazada;
+    src: url('Fuentes\ externas/massallera.TTF');
+}
+
+#p1{
+    font-size: 20pt; /* tamaño fuente */
+    font-style: italic; /* normal italic oblique */
+    font-weight: bold;/* grosor, pudiendo dar valor num */
+    font-variant: small-caps; /* conv minus, tam más peq */
+    font-family: LetraEnlazada;
+}
+
+#p2{
+    letter-spacing: 4px;/* Separación entre letras */
+    word-spacing: 3px;/* Separacion entre parlabras */
+    line-height: 1.5px; /* Interlineado */
+    text-indent: 3px; /* Sangría */
+    white-space: pre; /* Comportamiento spaciados, normal quita espacios dejando solo 1 */    
+}
+
+#p3{
+    tab-size: 20px; /* Ancho tabulaciones */
+    direction: rtl; /* dirección del texto */
+    text-align: right; /* Justificar textos */
+    text-justify: inter-word; /* cómo justificar si entre caracteres, palabras o sin justificar */
+    text-overflow: clip; /* comportamiento cuando se desborda */
+}
+
+#p4{
+    vertical-align: bottom; /* alineación vertical del eleme */
+    text-decoration: dotted; /* subrayado */
+    text-transform: uppercase; /* may, minus, capi */
+    text-shadow: 5px 5px 5px #666;
+}
+
+body{
+    background-image: url('imgs/arale.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+}

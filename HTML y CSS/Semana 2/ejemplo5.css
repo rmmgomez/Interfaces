@@ -1,0 +1,10 @@
+button { /* Selecciona todos los botones */
+    color: blue;
+    font-weight: bolder;
+}
+button[disabled] {/* Botón con atributo disabled */
+    color: black;
+}  
+[disabled] { /* Cualquier elemento con atributo disabled */
+    background: red;
+}        
