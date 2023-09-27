@@ -7,7 +7,9 @@ p {
 .class1 {
     color: blue;
 }
-
+.classic{
+    
+}
 button.classic.primary.large {
     /* Estilos CSS para aquellos elementos button que contengan todas esas clases */
   }

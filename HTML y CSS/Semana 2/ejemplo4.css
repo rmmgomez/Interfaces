@@ -18,4 +18,4 @@ div ~ p{ /* No es necesario que sean adyacentes, absta que esté a continuación
 * { /* Elimina márgenes y rellenos de todos los elementos de un documento HTML */
     margin: 0;
     padding: 0;
-  }
+}
