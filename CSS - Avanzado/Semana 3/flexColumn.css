@@ -1,0 +1,14 @@
+div.card > img{
+    height: 200px;
+}
+main{
+    display: flex;
+    flex-direction: column; 
+    gap: 10px 20px; /* Separación entre items, row-gap column-gap */
+    align-items: center;
+}
+
+.card{
+    border: 2px solid grey;
+    border-radius: 2px;
+}

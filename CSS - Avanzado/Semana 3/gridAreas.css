@@ -1,0 +1,28 @@
+.container{
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto); */
+    grid-template-areas:    "arribaI arribaD arribaD" 
+                            "centroI centroI centroD" 
+                            "abajoI abajoC abajoD";
+    gap: 10px 20px;
+    background-color: gainsboro;
+}
+.item{
+    border: 1px solid red;
+}
+.item1{
+    grid-area: arribaD;
+}
+.item2{
+    grid-area: centroI;
+}
+.item3{
+    grid-area: abajoI;
+}
+.item4{
+    grid-area: abajoC;
+}
+.item5{
+    grid-area: abajoD;
+}

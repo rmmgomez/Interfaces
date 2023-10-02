@@ -1,0 +1,22 @@
+.container{
+    background-color: aliceblue;
+    min-height: 300px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    /* align-content: flex-end; */ /* Sólo para multilinea */
+}
+.item{
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    color: white;
+    font-size: 5rem;
+}
+.item3{
+    order: -2; /* Todos por defecto tienen valor 0 */
+}
+.item1{
+    align-self: flex-start;
+}

@@ -1,0 +1,26 @@
+.container{
+    background-color: aliceblue;
+    min-height: 300px;
+    display: grid;
+    /* items para el conetnido */
+    justify-items: stretch;
+    align-items: stretch;
+    /* place-items: stretch; */
+    /* content para el contenedor */
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: 75px 125px;
+    gap: 20px;
+}
+.item{
+    background-color: blue;
+    color: white;
+}
+
+.item2{
+    background-color: aquamarine;
+    order: -1;
+/*     justify-self: end;
+    align-self: end; */
+}
