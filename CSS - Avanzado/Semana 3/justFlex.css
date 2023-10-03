@@ -20,3 +20,6 @@
 .item1{
     align-self: flex-start;
 }
+.item2{
+    order:-1;
+}

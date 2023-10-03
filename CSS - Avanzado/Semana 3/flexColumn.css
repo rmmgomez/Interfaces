@@ -3,7 +3,7 @@ div.card > img{
 }
 main{
     display: flex;
-    flex-direction: column; 
+    flex-direction: column-reverse; 
     gap: 10px 20px; /* Separación entre items, row-gap column-gap */
     align-items: center;
 }
