@@ -3,7 +3,7 @@ div.card > img{
 }
 main{
     display: flex;
-    flex-direction: column-reverse; 
+    flex-direction: column; 
     gap: 10px 20px; /* Separación entre items, row-gap column-gap */
     align-items: center;
 }
@@ -11,4 +11,7 @@ main{
 .card{
     border: 2px solid grey;
     border-radius: 2px;
+}
+.item3{
+    order: 1;
 }

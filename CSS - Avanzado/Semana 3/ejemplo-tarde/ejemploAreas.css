@@ -1,0 +1,32 @@
+.container{
+    display: grid;
+    grid-template-areas:    "F1C1 F1C2 F1C3 F1C3"
+                            "F2C1 F2C2 F1C3 F1C3"
+                            "F3C1 F2C2 F3C3 F3C4"
+                            "F3C1 F4C2 F4C3 F4C4";
+}
+.item{
+    border: 1px solid red;
+}
+.item1{
+    grid-area: F1C3;
+}
+.item2{
+    grid-area: F2C2;
+}
+.item3{
+    grid-area: F3C1;
+}
+.item4{
+    grid-area: F4C4;
+}
+.item5{
+    grid-area: F1C1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+.item9{
+    grid-column: 1/4;
+    grid-row: 2/3;
+}

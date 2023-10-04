@@ -3,12 +3,15 @@ div.card > img{
     height: 200px;
 }
 main{
-    display: inline-flex;
-    /* flex-direction: row-reverse; */ 
+    display: flex;
+    flex-direction: row-reverse; 
     flex-wrap: wrap; /* Si no cabe en una fila pasa a ser multilínea el flex */
     /* flex-flow: row-reverse wrap; * //* Las dos líneas anteriores con una sola propiedad*/
-    gap: 10px 20px; /* Separación entre items, row-gap column-gap */
+    /* gap: 10px 20px; */ /* Separación entre items, row-gap column-gap */
     align-content: space-around;
+    /* column-gap: 20px;
+    row-gap: 20px; */
+    gap: 20px;
 }
 
 .card{
