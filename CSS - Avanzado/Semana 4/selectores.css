@@ -1,0 +1,20 @@
+:root{
+
+}
+a:is(.menu, .autor){ /* a.menu a.autor */
+    color: black;
+}
+
+a:where(.menu, .autor){ /* a.menu a.autor */
+    color: red; /* Tiene menor especificidad */
+    text-decoration: none;
+}
+
+section:has(>.article){
+    display: flex;
+    gap: 20px;
+}
+a:not(.autor){
+    text-transform: uppercase;
+    padding: 20px;
+}

@@ -1,0 +1,22 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* Custom properties */
+:root{ /* Para todo el html */
+    color: white;
+}
+.parent{
+    --bg-color: black; /* Defino la variable --bg-color, 
+                            para usarla empleo el método var */
+}
+.first{
+    --bg-color: purple;
+}
+.child{
+    /* Los dos primeros hijos serán negro, pero 
+    el primer hijo se sobreescribe con purple y 
+    el tercer elemento al no tener ningun color
+    pasa a coger el valor por defecto que es azul */
+    background-color: var(--bg-color, blue);
+}
