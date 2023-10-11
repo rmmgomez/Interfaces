@@ -1,0 +1,18 @@
+a:is(.menu, .autor){ /* a.menu a.autor */
+    color: lch(50 150 45); /* Rojo */
+    /* color: oklch(50% 0.4 270); */
+}
+
+a:where(.menu, .autor){ /* a.menu a.autor */
+    color: oklch(50% 0.4 270); /* Tiene menor especificidad */
+    text-decoration: none;
+}
+
+section:has(>.article){
+    display: flex;
+    gap: 20px;
+}
+a:not(.autor){
+    text-transform: uppercase;
+    padding: 20px;
+}
