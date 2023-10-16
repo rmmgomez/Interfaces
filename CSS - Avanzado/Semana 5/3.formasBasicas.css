@@ -1,0 +1,69 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.cuadrado{
+    border: 4px solid black;
+    background: red;
+    width: 200px;
+    height: 200px;
+    clip-path: inset(0 0 50% 50%);
+    /* parte desde 0 arriba, 0derechahasta la mitad de abajo y mitad de la izda */
+}
+.cuadrado2{
+    background: red;
+    width: 200px;
+    height: 200px;
+    clip-path: inset(50px round 20px);
+}
+.rectangulo{
+    border: 4px solid black;
+    background: red;
+    width: 200px;
+    height: 200px;
+    clip-path: inset(0 0 50% 25%);
+}
+.rectangulo2{
+    background: red;
+    width: 200px;
+    height: 200px;
+    clip-path: inset(75px 50px round 20px);
+}
+.circulo{
+    background: red;
+    width: 200px;
+    height: 200px;
+    /* tamaño punto central en x y punto central en y */
+    clip-path: circle(50% at 50% 50%);
+}
+.circulo2{
+    background: red;
+    width: 200px;
+    height: 200px;
+    clip-path: circle(50% at 50% 0);
+}
+.ellipse{
+    background: red;
+    width: 200px;
+    height: 200px;
+    /* tamañox tamañoy en x y */
+    clip-path: ellipse(50% 25% at 50% 0);
+}
+.polygon{
+    background: red;
+    width: 200px;
+    height: 200px;
+    /* tres puntos/coordenadas separadas por comas */
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+.path{
+    width: 256px;
+    height: 256px;
+    background: url("imgs/semipresencial.png") center / cover;
+    clip-path: path("m4,87l93,0l29,-84l29,84l93,0l-76,52l29,84l-76,-52l-76,52l29,-84l-76,-52z");
+}

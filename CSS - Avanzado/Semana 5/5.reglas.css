@@ -1,0 +1,26 @@
+/* 
+    La regla import nos permite cargar un fichero css externo
+    esta regla suele estar arriba del todo
+*/
+
+/* Importa el fichero utilizando la función css */
+@import url("4.shape.css");
+
+/* Importa el fichero utilizando un string */
+@import '4.shape.css';
+
+/* Indicamos una mediaquery, en este caso 
+    se importará sólo si estamos imprimiendo con el navegador
+*/
+@import url("4.shape.css") print; 
+
+/* Importa el css para monitores/pantallas pc, projection está obsoleto */
+@import "4.shape.css" screen, projection;
+/* Sólo si tenemos la orientazon horizontal */
+@import url('4.shape.css') screen and (orientation:landscape);
+/* desde una url */
+@import "https://developer.mozilla.org/static/css/main.11730cda.css";
+
+@import url("4.shape.css") supports(display: grid) screen and (max-width: 400px);
+@import url("4.shape.css") supports(not (display: grid) and (display: flex)) screen and (max-width: 400px);
+

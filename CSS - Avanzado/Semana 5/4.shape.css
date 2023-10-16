@@ -1,0 +1,13 @@
+article {
+    font-size: 1.5rem;
+    max-width: 500px;
+    margin: auto;
+  }
+.arale {
+    shape-outside: url("imgs/arale.png");
+    float: left;
+    width: 50%;
+    border: 3px solid red;
+    /* shape-margin: 1rem; */
+    shape-image-threshold: 90%;
+}

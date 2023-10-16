@@ -1,0 +1,20 @@
+.container{
+    background-image: url("imgs/arale.png");
+    background-size: cover;
+    height: 100vh;
+}
+.texto{
+    background-color: white;
+    color: black;
+    font-size: 10vw; 
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+}

@@ -1,0 +1,53 @@
+img{
+    width: 25%;
+}
+.arale1{
+    /* Para usar varios filtros se separa cada uno por un espacio */
+    filter: contrast(200%) brightness(150%) blur(0.5px) invert(1) drop-shadow(5px 5px 15px black);
+    /* Filtros que podemos usar: 
+        grayscale: escala blanco y negro
+        blur: desenfoque gausiano - size
+        sepia: grado de color sepia
+        saturate: grado de saturación
+        opacity: grado de transparencia
+        brighness: brillo
+        contrast: contraste
+        hue-rotate: rotación del color - angulo
+        invert: invertir
+        drop-shadow: sombra idéntica - posx posy size color
+
+        las funciones anteriores que no viene especificado qué valores 
+        se le dan es o porcentaje o número
+        
+        ¡¡OJO!!: la función drop-shadow no tiene el factor de crecimiento
+        ni la palabra reservada inset para hacer las sombras interiores
+        como sí tiene box-shadow
+
+    */
+
+}
+.arale2{
+    /* mezclamos diferentes elementos */
+    mix-blend-mode: /* difference */ multiply;
+    /* Los distintos modos de fusión que podemos usar son: */
+    /* 
+        multitply
+        screen (trama)
+        overlay(superponer)
+        darken(oscurecer)
+        lighten
+        color-dodge(sobreexponer color)
+        color-burn(subexponer color)
+        hard-light (luz fuerte)
+        soft-light (luz suave)
+        difference (diferencia)
+        exclusion
+        hue (tono)
+        saturation
+        color
+        luminosity
+    */
+}
+:root{
+    background-color: bisque;
+}
