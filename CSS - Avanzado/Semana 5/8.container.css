@@ -1,0 +1,36 @@
+/* El tamaño depende del contenedor padre, no del navegador como los media queries */
+.container {
+    container-name: parent;
+    container-type: inline-size;
+    /* el container type puede ser un tamaño si es tipo bloque o inline-size tipo en line
+    si es inline no tendrá en cuenta la altura, al contrario que si usamos size */
+    /* container: parent / inline-size; */
+
+}
+
+@container parent (max-width: 500px) {
+    .item {
+        /* Regla a los hijos del contenedor parent cuando como máximo tenga 500px ancho */
+        background: blue;
+        color: white;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #333;
+        --text-color: #eee;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-color: #eee;
+        --text-color: #111;
+    }
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}

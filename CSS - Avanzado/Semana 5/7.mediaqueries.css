@@ -1,0 +1,32 @@
+.container {
+    background: grey;
+    height: 100px;
+}
+  
+@media (max-width: 800px) and (orientation: landscape) {
+    .container {
+        background: red;
+    }
+}
+
+.menu {
+    height: 100px;
+}
+
+@media (width <= 400px) {
+    .menu {
+        background: blue;
+    }
+}
+
+@media (400px <= width <= 800px) {
+    .menu {
+        background: red;
+    }
+}
+
+@media (width >= 800px) {
+    .menu {
+        background: green;
+    }
+}

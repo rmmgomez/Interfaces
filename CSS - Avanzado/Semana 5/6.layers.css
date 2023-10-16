@@ -1,0 +1,84 @@
+/* El orden de las capas es importante */
+@layer reset, texts, theme;
+
+/* 
+    Si la hubieramos hecho anonima seria como si fuera css sin capa 
+    (ultima capa a aplicar) y luego no podriamos referenciarla ni ordenarla o
+     poner más contenid... 
+*/
+/* @layer theme { 
+    .primary {
+        background: #34a;
+        border: 2px outset #6381db;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 6px;
+        }
+}  
+@layer reset {
+    button {
+        padding: 30px;
+    }
+}
+
+@layer texts {
+    .primary {
+        color: red;
+    }
+} */
+
+/* @layer theme {
+    .primary {
+        color: gold;
+    }
+} */
+
+
+/* 
+Con este ejemplo primero se aplica .especial por ser el que menor especificidad tiene
+luego se aplica button.especial sobreescribiendo el color a blanco (ya no es dorado), 
+y luego se aplica el primer bloque que coge color rojo
+*/
+/* button[class].especial {
+    color: red;
+}
+
+button.especial {
+    background: #34a;
+    border: 2px outset #6381db;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.especial {
+    margin: 20px;
+    color: gold;
+} */
+
+
+/* 
+    En este caso la primera que se aplica es texts, luego si existen otras pasan a procesarlas
+    en este caso como no hay más capas (las de fuera son anónimas), se aplica las capas anónima 
+    después de las anteriores
+ */
+@layer texts{
+    button[class].especial {
+        color: red;
+    }
+}
+
+button.especial {
+    background: #34a;
+    border: 2px outset #6381db;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.especial {
+    margin: 20px;
+    color: gold;
+}
+
+@import url("5.reglas.css") layer(framework); /* Con esto importamos codigo externo en una capa */

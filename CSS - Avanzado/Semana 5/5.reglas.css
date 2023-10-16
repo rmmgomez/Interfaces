@@ -19,8 +19,11 @@
 /* Sólo si tenemos la orientazon horizontal */
 @import url('4.shape.css') screen and (orientation:landscape);
 /* desde una url */
-@import "https://developer.mozilla.org/static/css/main.11730cda.css";
+@import "https://github.com/rmmgomez/Interfaces/blob/main/CSS%20-%20Avanzado/Semana%204/variables.css";
 
 @import url("4.shape.css") supports(display: grid) screen and (max-width: 400px);
 @import url("4.shape.css") supports(not (display: grid) and (display: flex)) screen and (max-width: 400px);
 
+@supports not (display: grid) and (display: flex){
+    display: flex;
+}
