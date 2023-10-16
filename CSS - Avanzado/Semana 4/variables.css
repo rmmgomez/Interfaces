@@ -5,25 +5,38 @@
 /* Custom properties */
 :root{ /* Para todo el html */
     color: white;
+<<<<<<< HEAD
     --bg-color: purple;
 }
 .parent{
     --text-color: red;
+=======
+}
+.parent{
+>>>>>>> 5d9c62ac1a3b3edef348bd2ade4f85d85524deb5
     --bg-color: black; /* Defino la variable --bg-color, 
                             para usarla empleo el método var */
 }
 .first{
+<<<<<<< HEAD
     --bg-color: blue;
     color: var(--text-color, orange);
+=======
+    --bg-color: purple;
+>>>>>>> 5d9c62ac1a3b3edef348bd2ade4f85d85524deb5
 }
 .child{
     /* Los dos primeros hijos serán negro, pero 
     el primer hijo se sobreescribe con purple y 
     el tercer elemento al no tener ningun color
     pasa a coger el valor por defecto que es azul */
+<<<<<<< HEAD
     background-color: var(--bg-color, orange);
 }
 
 .third{
     color: var(--text-color);
+=======
+    background-color: var(--bg-color, blue);
+>>>>>>> 5d9c62ac1a3b3edef348bd2ade4f85d85524deb5
 }

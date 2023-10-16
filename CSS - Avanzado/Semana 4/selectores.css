@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 a:is(.menu, .autor){ /* a.menu a.autor */
     color: lch(50 150 45); /* Rojo */
     /* color: oklch(50% 0.4 270); */
@@ -5,6 +6,17 @@ a:is(.menu, .autor){ /* a.menu a.autor */
 
 a:where(.menu, .autor){ /* a.menu a.autor */
     color: oklch(50% 0.4 270); /* Tiene menor especificidad */
+=======
+:root{
+
+}
+a:is(.menu, .autor){ /* a.menu a.autor */
+    color: black;
+}
+
+a:where(.menu, .autor){ /* a.menu a.autor */
+    color: red; /* Tiene menor especificidad */
+>>>>>>> 5d9c62ac1a3b3edef348bd2ade4f85d85524deb5
     text-decoration: none;
 }
 
