@@ -6,14 +6,14 @@
     (ultima capa a aplicar) y luego no podriamos referenciarla ni ordenarla o
      poner más contenid... 
 */
-/* @layer theme { 
+@layer theme { 
     .primary {
         background: #34a;
         border: 2px outset #6381db;
-        color: #fff;
+        color: gold;
         padding: 5px 10px;
         border-radius: 6px;
-        }
+    }
 }  
 @layer reset {
     button {
@@ -25,15 +25,13 @@
     .primary {
         color: red;
     }
-} */
+}
 
-/* @layer theme {
+@layer theme {
     .primary {
         color: gold;
     }
-} */
-
-
+}
 /* 
 Con este ejemplo primero se aplica .especial por ser el que menor especificidad tiene
 luego se aplica button.especial sobreescribiendo el color a blanco (ya no es dorado), 
@@ -62,7 +60,8 @@ button.especial {
     en este caso como no hay más capas (las de fuera son anónimas), se aplica las capas anónima 
     después de las anteriores
  */
-@layer texts{
+
+/* @layer texts{
     button[class].especial {
         color: red;
     }
@@ -79,6 +78,7 @@ button.especial {
 .especial {
     margin: 20px;
     color: gold;
-}
+} */
 
-@import url("5.reglas.css") layer(framework); /* Con esto importamos codigo externo en una capa */
+@import url("5.reglas.css") layer(texts2); 
+/* Con esto importamos codigo externo en una capa */

@@ -9,5 +9,5 @@ article {
     width: 50%;
     border: 3px solid red;
     /* shape-margin: 1rem; */
-    shape-image-threshold: 90%;
+    shape-image-threshold: 80%;
 }

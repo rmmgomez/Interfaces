@@ -1,0 +1,7 @@
+.container {
+    width: 70vw;
+    height: 30vh;
+    /* comico que empieza arriba centrado en horizontal */
+    background: conic-gradient(at 50% 0%, blue, black);
+    /* background: repeating-conic-gradient(blue 10%, yellow 20%, red 30%); */
+}

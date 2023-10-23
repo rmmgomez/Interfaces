@@ -1,0 +1,83 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* 
+    Unidades absulutas
+
+    pixel           1px = 0.26mm
+    pulgadas        1in = 25.4mm
+    cm              
+    picas           1pc = 4.23mm
+    mm          
+    puntos          1pt = 0.35mm
+    Cuarto de mm    1Q = 0.248mm
+*/
+.container {
+  width: 300px;
+  height: 300px;
+  background: pink;
+}
+
+/* 
+    Unidades relativas
+    
+    % relativa a la herencia (elemento padre)
+    em/rem --> tamaño del font-size en ese elemn
+    ex/rex --> tam alto de la primera minúscula
+    ch/rch --> tamaño del ancho de un carácter alfanumérico (antes correspondía al carac 0)
+    cap/rcap --> tamaño alto de primera letra mayuscula
+    lh/rlh --> basada en el interlineado (line-height)
+
+*/
+/* % --> relativo al padre */
+/* .item{
+    width: 50%;
+    height: 80%;
+    background: cornsilk;
+} */
+
+/* em --> tamaño en base al establecido por el navegador en tipografia, 1em ~ 16px */
+/* Si el font-size está en el padre, como se hereda el tam sería igual */
+/* Cuadrado de 64x64px  */
+/* .item{
+    font-size: 32px; 
+    width: 2em; 
+    height: 2em;
+    background: cornsilk;
+} */
+/* Tamaño en función del padre -- root */
+/* :root{font-size: 44px;}
+.p1::after{ font-size: 2rem; content: "Hola 1";}
+.p2::after{ font-size: 1rem; content: "Hola 2";} */
+
+/* UNIDADES DE VIEWPORT --- v tamaño de ventana */
+/* 
+    vw      viewport width          1vw = 1% ancho del nav
+    vh      viewport height         1vh = 1% alto del nav
+    vmin    viewport minimo        1vmin = 1% alto/ancho (el mín de los dos)
+    vmax    viewport maximo        1vmin = 1% alto/ancho (el max de los dos) 
+    vi      viewport inline
+    vb      viewport block
+*/
+
+/* mitad del viewport */
+/* .container{
+    width: 50vw;
+    height: 50vh;
+    background-color: pink;
+} */
+
+/* El mínimo será el alto, me creará un cuadrado de la mitad del alto */
+/* .container{
+    width: 50vmin;
+    height: 50vmin;
+    background-color: pink;
+} */
+
+/* El max será el ancho, me creará un cuadrado de la mitad del ancho */
+/* .container{
+    width: 50vmax;
+    height: 50vmax;
+    background-color: pink;
+} */
