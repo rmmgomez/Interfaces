@@ -1,0 +1,98 @@
+.transicion {
+  width: 20vw;
+  height: 20vh;
+  transition-duration: 2s;
+  background-color: cadetblue;
+}
+.transicion:hover {
+  font-size: 5rem;
+  transition-property: font-size;
+  background-color: aquamarine;
+  transition-timing-function: steps(4, end);
+  transition-delay: 0.5s;
+  /* transition: <property> <duration> <timing-function> <delay>; */
+  /* transition: font-size 2s steps(2, end) 0.5s; */
+}
+
+.transiciones {
+  width: 20vw;
+  height: 20vh;
+  background: blue;
+  /* el ancho es en 3s y el color en 0.5, tiempos distintos para las transiciones */
+  transition: width 3s, background-color 0.5s;
+}
+
+.transiciones:hover {
+  width: 40vw;
+  background: orange;
+}
+.animacion {
+  /* animation: <name> <duration> <timing-function> <delay> <iteration-count> <direction> <fill-mode> <play-state> */
+  background-color: rebeccapurple;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  &:hover {
+    animation-name: rotate;
+    animation-duration: 0.7s;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Animaciones --> 
+    keyframe qué hace la animacion 
+
+*/
+.elemento{
+    width: 30vw;
+    height: 30vh;
+    border: 5px solid black;
+    background-color: aquamarine;
+    animation-name: cambia-color;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+    animation-delay: 2s;
+    /* animation-direction: reverse; */
+    animation-fill-mode: forwards;
+    /* animation: mover 5s infinite linear normal 5s; */
+}
+@keyframes cambia-color {
+/*     from{
+        background-color: aquamarine;
+    }
+    to{
+        background-color: rgb(13, 75, 75);
+    } */
+
+    0%{
+        background-color: aquamarine;
+        /* width: 20vw; */
+    }
+    25%{
+        background-color: greenyellow;
+        /* width: 40vw; */
+    }
+    75%{
+        background-color: green;
+        /* width: 50vw; */
+    }
+    100%{
+        background-color: rgb(13, 75, 75);
+        /* width: 70vw; */
+    }
+  }
+  @keyframes mover {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(200px);
+    }    
+  }

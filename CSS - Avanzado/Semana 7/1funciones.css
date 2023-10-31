@@ -1,0 +1,39 @@
+:root{
+    --ancho: 500px;
+    --alto: 20vh;
+}
+.container{
+    width: calc(var(--ancho) + 30vw); /* op. maths: +-*/ */
+    height: var(--alto);
+    background-color: gainsboro;
+    display: flex;
+}
+.hijo1{
+    /* width: min(var(--ancho), 25%, 2vw); */
+    width: max(var(--ancho), 25%, 2vw);
+    height: var(--alto);
+    background-color: gold;
+}
+.hijo2{
+    width: clamp(100px, 25%, 25vw);
+    /* Valor específico con ud relativas entre un min-max */
+    /* width: max(100px, min(25%, 25vw)); */
+    height: var(--alto);
+    background: red;
+}
+.hijo3{
+    width: round(up, 124.75px, 1px); /* No soportado por muchos navegadores https://developer.mozilla.org/en-US/docs/Web/CSS/round#browser_compatibility */
+    width: mod(500px, 200px); /* módulo */
+    width: rem(500px, 200px); /* como modulo pero con num neg dev simbolo */
+    height: var(--alto);
+    background: greenyellow;
+}
+.hijo4{
+    width: calc(sin(45deg) * 100px);
+    height: var(--alto);
+    background: pink;
+}
+.hijo5::before{
+    content: attr(class);
+    font-size: 2em;
+}

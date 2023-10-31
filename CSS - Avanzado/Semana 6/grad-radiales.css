@@ -1,9 +1,9 @@
 .container {
   width: 70vw;
-  height: 30vh;
+  height: 80vh;
   /* background: radial-gradient(yellow, red, black); */
   /* background: radial-gradient(ellipse, yellow 50%, red 55%, black 75%); */
   /* background: radial-gradient(circle 200px, yellow 50%, red 55%, black 75%); */
   /* background: radial-gradient(circle 400px at left,yellow 50%,red 55%,black 75%); */
-  background: repeating-radial-gradient(circle, blue 0% 10%, yellow 10% 20%, red 20% 30%);
+  /* background: repeating-radial-gradient(circle, blue 0% 10%, yellow 10% 20%, red 20% 30%); */
 }

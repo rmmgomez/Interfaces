@@ -1,12 +1,12 @@
 .container{
     width: 70vw;
     height: 20vh;
-    /* background-image: linear-gradient(to top right, blue, yellow, red); */
+    /* background-image: linear-gradient(to top right, blue, yellow, red) */
     /* background: linear-gradient(to right, black, blue, gold, green, red); */
     /* background: linear-gradient(to right, black 0%, blue 25%, gold 50%, green 75%, red 100%); */
     /* background-image: linear-gradient(to right, blue 50%, red 55%, green 75%); */
 
     /* Inicio - fin seria */
     /* background-image: linear-gradient(to right, black 25%, blue 25% 50%, red 50% 75%, green 75%); */
-    background-image: repeating-linear-gradient(to right, blue 0% 10%, yellow 10% 20%, red 20% 30%);
+    /* background-image: repeating-linear-gradient(to right, blue 0% 10%, yellow 10% 20%, red 20% 30%); */
 }

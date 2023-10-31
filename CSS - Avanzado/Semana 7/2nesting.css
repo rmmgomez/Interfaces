@@ -1,0 +1,37 @@
+:root {
+  --alto: 80vh;
+  --ancho: 80vw;
+}
+/* solo permite clases, id, combinadores... no elementos */
+/* .container{
+    width: var(--ancho);
+    height: var(--alto);
+    background-color: gainsboro;
+}
+.container .hijo1{ 
+    width: calc(var(--ancho)/ 2);
+    height: calc(var(--alto)/ 2);
+    background-color: gold;
+} */
+
+.container {
+  width: var(--ancho);
+  height: var(--alto);
+  background-color: gainsboro;
+  .hijo1 {
+  /* & div  {*/ /* Si queremos elementos */
+    width: calc(var(--ancho) / 2);
+    height: calc(var(--alto) / 2);
+    background-color: gold;
+  }
+  &:hover{ /* .container:hover */
+    background-color: aquamarine;
+  }
+  /* Elementos hijo2 que contienen a .container, es decir, .hijo2 .container */
+  /* .hijo2 &{
+    background-color: turquoise;
+  } */
+  @media (orientation: landscape) {
+    height: 100vh;
+  }
+}

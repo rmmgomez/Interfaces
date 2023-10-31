@@ -1,0 +1,49 @@
+:root {
+  --alt-anch: 20vw;
+}
+.container {
+  margin: 40px;
+  width: var(--alt-anch);
+  height: var(--alt-anch);
+  background: green;
+  transform: rotate(45deg) scale(0.2) translate(var(--alt-anch), 300px);
+  /* transform: skewX(5deg) skewY(15deg); */
+  /* 
+    Funciones:
+    - translate -  desplaza en el ejeX (izda, dcha) y/o ejeY (arrriba, abajo)
+    - scale
+    - rotate: gira sobre ejeX/ejeY 
+    - skewx skewy: inclina sobre ejeX / ejeY
+  
+  */
+  .elemento {
+    width: var(--alt-anch);
+    height: var(--alt-anch);
+    background: blue;
+    transform: translate(150px, 100px) rotate(25deg);
+    
+    /* transform: rotate(25deg) translate(150px, 100px); */
+    /*     transform: translate(150px, 0) rotate(45deg);
+    transform-origin: 0% 0%; */
+    /* translate: 0px 0px 30px; */ /* Equivalente a translateZ(30px) */
+    /* rotate: 45deg; */ /* Equivale a transform: rotateZ(45deg);  */
+
+    /* rotate: x 45deg;  */ /* Equivale a transform: rotateX(45deg);  */
+    /* rotate: y 120deg; */ /* Equivale a transform: rotateY(120deg); */
+
+    /* rotate: 0 0 1 45deg; */ /* Equivale a transform: rotateZ(45deg);  */
+    /* rotate: 1 0 0 15deg; */ /* Equivale a transform: rotateX(15deg);  */
+    /* rotate: 0 1 1 5deg; */ /* Equivale a transform: rotateY(5deg) rotateZ(5deg);  */
+  }
+}
+
+.transformaciones {
+  width: var(--alt-anch);
+  height: var(--alt-anch);
+  background: gold;
+  
+  transform: translateX(40px); /* Sólo eje X */
+  transform: translateY(25px); /* Solo eje Y */
+  transform: translateZ(55px); /* Solo eje Z */
+  transform: translate3d(400px, 25px, 55px); /* Equivale a los tres anteriores */  
+}

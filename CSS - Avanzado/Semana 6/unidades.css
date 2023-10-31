@@ -18,10 +18,15 @@
   height: 300px;
   background: pink;
 }
+.item{
+    width: 50%;
+    height: 50%;
+    background: yellow;
+}
 
 /* 
     Unidades relativas
-    
+    :root --> rXX
     % relativa a la herencia (elemento padre)
     em/rem --> tamaño del font-size en ese elemn
     ex/rex --> tam alto de la primera minúscula
@@ -71,7 +76,7 @@
 /* El mínimo será el alto, me creará un cuadrado de la mitad del alto */
 /* .container{
     width: 50vmin;
-    height: 50vmin;
+    height: 20vmin;
     background-color: pink;
 } */
 
