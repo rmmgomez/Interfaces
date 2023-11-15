@@ -1,0 +1,33 @@
+// Importo archivos scss en sass
+@import 'colores', "botones";
+
+/* Uso de una variable en Sass */
+header h1{
+    color: $color-text;
+    background: $bg-color;
+}
+
+.content{
+    border: 1px solid #ccc;
+    padding: 20px;
+    h2{
+        font-size: 3em;
+        margin: 20px 0;
+    }
+    p{
+        font-size: 1.5em;
+        margin: 15px 0;
+    }
+    .callout{
+        color: red;
+    }
+    &.callout{
+        color: green;
+    }
+}
+.info{
+    color: orange;
+    .tuto &{ /* Orden & */
+        color: green;
+    }
+}

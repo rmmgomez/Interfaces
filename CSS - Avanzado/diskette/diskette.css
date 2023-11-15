@@ -1,0 +1,176 @@
+/* 1.50 
+https://www.youtube.com/watch?v=jSia5SigafE&t=1035s
+https://github.com/ManzDev/twitch-diskette/blob/main/src/index.css
+*/
+:root{
+    --disk-color: #1b56a8;
+    --disk-size: 300px;
+    --disk-metal-color: #c7c9ca;
+    --bg-color: #fff;
+    --disk-label-color: #eee;
+    --metal-line-color: rgba(0,0,0,0.04);
+    --disk-label-pattern: 
+        linear-gradient(to bottom, red 0 30px, transparent 30px 100%),
+        repeating-linear-gradient(to bottom, transparent 0 30px, red 30px 31px);
+    --disk-metal-pattern: 
+        linear-gradient(to bottom, 
+        transparent 0 2px, 
+        rgba(255, 255, 255, 0.65) 32px 33px, 
+        transparent 64px),
+        repeating-linear-gradient(to right, 
+        transparent 0 2px, 
+        var(--metal-line-color) 2px 3px, 
+        transparent 3px 4px, 
+        var(--metal-line-color) 4px 5px, 
+        transparent 5px 7px, 
+        var(--metal-line-color) 7px 8px,
+        transparent 8px 9px,
+        var(--metal-line-color) 9px 11px);
+    --disk-corner-shape: 
+    polygon(0% 0%, 79% 0%, 79% 3%, 80% 3%, 82% 1%, 89% 1%, 89.5% 0%, 94% 0%, 100% 5%, 100% 100%, 0% 100%)
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.diskette{
+    margin: 1em;;
+    width: var(--disk-size);
+    height: var(--disk-size);
+    background-color: var(--disk-color);
+    border-radius: 5px;
+    clip-path: var(--disk-corner-shape);
+    box-shadow:
+        2px 2px 1px rgba(0, 0, 0, 0.1) inset,
+        4px 4px 1px rgba(0, 0, 0, 0.05) inset;
+    .diskette-top-container{
+        width: 100%;
+        height: 40%;
+        position: relative;
+        
+        .little-gap{ /* gap-container */
+            width: 67%;
+            height: 88%;
+            border: 2px solid rgba(0, 0, 0, 0.25);
+            border-radius: 0 0 15px 15px;
+            transform: translate(15%, 0%);
+            display: flex;
+            justify-content: flex-end;
+            &::before{
+                position: absolute;
+                left: 0;
+                content:"";
+                display: block;
+                background-color: rgba(255,255,255,0.1);
+                width: 20px;
+                height: 100%;
+                transform: translate(-3px);
+                border-bottom-left-radius: 15px;
+                clip-path: polygon(0 0, 3px 0, 3px 100%, 0 100%);
+            }
+            &::after{
+                position: absolute;
+                left: 0;
+                content: "";
+                display: block;
+                width: 15px;
+                height: 3px;
+                background: var(--bg-color);
+                clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+                transform: translate(0px, -2px);
+                /* transition: transform 1s; */
+            }
+            .metal{ /* protector */
+                width: 80%;
+                height: 100%;
+                background-color: var(--disk-metal-color);
+                background-image: var(--disk-metal-pattern);
+                display: flex;
+                justify-content: flex-end;
+                border-radius: 0 0 12px 12px;
+                transform: translate(2%, -2%);
+                /* transition: transform 1s; */
+                z-index: 6;
+            }
+            .hole{ /* gap */
+                width: 25%;
+                height: 85%;
+                background-color: var(--disk-color);
+                transform: translate(-50%, 15%);
+                border-radius: 2px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+                overflow: hidden;
+                &::before {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    content: "";
+                    display: block;
+                    background: var(--diskette-tape-color);
+                    transform: translate(-42px, 0);
+                    /* transition: transform 1s; */
+                }
+            }
+        }
+    }
+    .diskette-bottom-container{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        position: relative;
+        
+        .leftpad-container{}
+        .lateral{ /* lateral idzo */
+            width: 10%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            align-items: center;
+            .little-gap{
+                width: 50%;
+                height: 7%;
+                background-color: var(--bg-color);
+                margin-bottom: 55%;
+                border-radius: 2px;
+            }
+            .write{
+                background-color: black;
+            }
+        }
+        .label{ /* gap container */
+            width: 80%;
+            height: 90%;
+            border: 2px solid rgba(0, 0, 0, 0.4);
+            border-bottom: 0;
+            border-radius: 10px 10px 0 0;
+            position: relative;
+            &::before{
+                position: absolute;
+                left: 0;
+                content:"";
+                display: block;
+                background-color: rgba(255,255,255,0.1);
+                width: 20px;
+                height: 100%;
+                transform: translate(-3px);
+                border-top-left-radius: 15px;
+                clip-path: polygon(0 0, 3px 0, 3px 100%, 0 100%);
+            }
+            .etiqueta{
+                width: 100%;
+                height: 100%;
+                background-color: var(--disk-label-color);
+                background-image: var(--disk-label-pattern);
+                border-radius: 10px 10px 0 0;
+                
+            }
+        }
+        .rightpad-container{ 
+        }
+    }
+}
