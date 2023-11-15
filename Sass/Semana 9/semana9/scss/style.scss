@@ -1,0 +1,9 @@
+@import "buttons";
+$text-color: #15a;
+// --text-color: #15a; Con css
+
+header {
+  color: $text-color;
+  background-color: $btn-color;
+  /* color: var(--text-color); con CSS*/
+}

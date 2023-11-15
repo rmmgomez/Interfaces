@@ -18,7 +18,7 @@
   width: var(--ancho);
   height: var(--alto);
   background-color: gainsboro;
-  .hijo1 {
+  .hijo1/* , .hijo2 */ {
   /* & div  {*/ /* Si queremos elementos */
     width: calc(var(--ancho) / 2);
     height: calc(var(--alto) / 2);
@@ -28,10 +28,21 @@
     background-color: aquamarine;
   }
   /* Elementos hijo2 que contienen a .container, es decir, .hijo2 .container */
-  /* .hijo2 &{
+  .hijo2 &{
     background-color: turquoise;
-  } */
+  }
   @media (orientation: landscape) {
     height: 100vh;
   }
 }
+
+/* .container{
+    width: var(--ancho);
+    height: var(--alto);
+    background-color: gainsboro;
+}
+.container .hijo1, .container .hijo2{ 
+    width: calc(var(--ancho)/ 2);
+    height: calc(var(--alto)/ 2);
+    background-color: gold;
+} */

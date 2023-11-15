@@ -45,5 +45,5 @@
   transform: translateX(40px); /* Sólo eje X */
   transform: translateY(25px); /* Solo eje Y */
   transform: translateZ(55px); /* Solo eje Z */
-  transform: translate3d(400px, 25px, 55px); /* Equivale a los tres anteriores */  
+  transform: translate3d(40px, 25px, 55px); /* Equivale a los tres anteriores */  
 }

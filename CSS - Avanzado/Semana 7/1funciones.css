@@ -3,7 +3,7 @@
     --alto: 20vh;
 }
 .container{
-    width: calc(var(--ancho) + 30vw); /* op. maths: +-*/ */
+    width: calc(var(--ancho) + 30vw); /* op. maths: +-* / */
     height: var(--alto);
     background-color: gainsboro;
     display: flex;
