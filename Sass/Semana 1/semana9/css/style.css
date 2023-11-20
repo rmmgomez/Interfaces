@@ -1,0 +1,43 @@
+.btn {
+  color: #444;
+  text-decoration: underline;
+  text-transform: lowercase;
+}
+.btn:hover {
+  background-color: #777;
+}
+
+/* Uso de una variable en Sass */
+header h1 {
+  color: #15a;
+  background: #ccc;
+}
+
+.content {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+.content h2 {
+  font-size: 3em;
+  margin: 20px 0;
+}
+.content p {
+  font-size: 1.5em;
+  margin: 15px 0;
+}
+.content .callout {
+  color: red;
+}
+.content.callout {
+  color: green;
+}
+
+.info {
+  color: orange;
+}
+.tuto .info {
+  /* Orden & */
+  color: green;
+}
+
+/*# sourceMappingURL=style.css.map */
