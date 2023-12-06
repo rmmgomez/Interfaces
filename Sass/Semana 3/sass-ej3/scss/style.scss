@@ -1,0 +1,72 @@
+/* .btn-a {
+  background: #777;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+.btn-b {
+  @extend .btn-a;
+  background: #ff0;
+}
+.sidebar .btn-a {
+  text-transform: lowercase;
+} */
+
+%btn {
+  background: #777;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+.btn-a {
+  @extend %btn;
+}
+.btn-b {
+  @extend %btn;
+  background: #ff0;
+}
+.sidebar .btn-a {
+  text-transform: lowercase;
+}
+
+$color-base: #333;
+$color-escala: #87bf64;
+
+p {
+  font: normal calc(2em / 1.5) Helvetica, sans-serif;
+  font: "Helvetica " + "Neue"; // "Helvetica Neue"
+  font: "sans-" + serif; // 'sans-serif'
+  font: sans- + "serif"; // sans-serif
+  font-size: 10px + 4pt;
+  // font-size: 10px + 4em;
+  width: percentage(calc(350px / 100px));
+  background: mix($color-base, #123);
+}
+.lighten {
+  color: lighten($color-base, 20%);
+}
+.darken {
+  color: darken($color-base, 20%);
+}
+.saturate {
+  color: saturate($color-base, 20%);
+}
+.desaturate {
+  color: desaturate($color-base, 20%);
+}
+.mix-a {
+    color: mix(#036, #036);
+}
+.mix-b{
+      color: mix(#036, #d2e1dd, 75%);
+}
+.grayscale {
+  color: grayscale($color-escala);
+}
+.invert {
+  color: invert($color-escala);
+}
+.complement {
+  color: complement($color-escala);
+}
+

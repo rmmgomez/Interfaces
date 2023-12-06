@@ -1,0 +1,75 @@
+/* .btn-a {
+  background: #777;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+.btn-b {
+  @extend .btn-a;
+  background: #ff0;
+}
+.sidebar .btn-a {
+  text-transform: lowercase;
+} */
+.btn-b, .btn-a {
+  background: #777;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.btn-b {
+  background: #ff0;
+}
+
+.sidebar .btn-a {
+  text-transform: lowercase;
+}
+
+p {
+  font: normal 1.3333333333em Helvetica, sans-serif;
+  font: "Helvetica Neue";
+  font: "sans-serif";
+  font: sans-serif;
+  font-size: 15.3333333333px;
+  width: 350%;
+  background: #222b33;
+}
+
+.lighten {
+  color: #666666;
+}
+
+.darken {
+  color: black;
+}
+
+.saturate {
+  color: #3d2929;
+}
+
+.desaturate {
+  color: #333333;
+}
+
+.mix-a {
+  color: #003366;
+}
+
+.mix-b {
+  color: #355f84;
+}
+
+.grayscale {
+  color: #929292;
+}
+
+.invert {
+  color: #78409b;
+}
+
+.complement {
+  color: #9c64bf;
+}
+
+/*# sourceMappingURL=style.css.map */
