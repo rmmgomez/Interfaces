@@ -45,8 +45,8 @@ footer {
   border: $size $style $color;
   border-radius: $radius;
 }
-@mixin border-button-args($args...) {
-  border: $args;
+@mixin border-button-args($pepe...) {
+  border: $pepe;
 }
 
 main {
@@ -60,14 +60,14 @@ main {
     gap: 10px;
     .btn-login {
       @include button;
-      @include border-button(1px, solid, transparent);
+      /* @include border-button(1px, solid, transparent); */
       /* @include border-button-args(1px, solid, transparent); */
       background-color: #007bff;
       border-color: #007bff;
     }
     .btn-register {
       @include button;
-      @include border-button(1px, solid, transparent);
+      /* @include border-button(1px, solid, transparent); */
       // Podemos alterar el orden de los parámetros de entrada del mixin
       // Pero eso sí, indicando qué es cada cosa
       /* @include border-button($style: solid, $size: 1px, $color: transparent); */
