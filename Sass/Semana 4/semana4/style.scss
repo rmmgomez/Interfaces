@@ -7,7 +7,7 @@ $danger: #ff4136;
 }
 
 // Shade a color: mix a color with black
-@function shade-color($color, $weight) {
+@function shade-color($color, $weight: 30%) {
   @return mix(black, $color, $weight);
 }
 * {
@@ -16,32 +16,32 @@ $danger: #ff4136;
 }
 .custom-element-1 {
   color: $primary;
-  //   color: tint-color($primary, 30%);
+  color: tint-color($primary, 30%);
 }
 
 .custom-element-2 {
   color: $danger;
-  //   color: shade-color($danger, 30%);
+  color: shade-color($danger);
 }
-$theme: dark;
-main {
-  @if $theme == dark {
-    background: #000;
-  } @else if $theme == light {
-    background: #fff;
-  } @else {
-    background: #ccc;
-  }
-}
+// $theme: dark;
+// main {
+//   @if $theme == dark {
+//     background: #000;
+//   } @else if $theme == light {
+//     background: #fff;
+//   } @else {
+//     background: #ccc;
+//   }
+// }
 $emoticonos: 🫠 😶‍🌫️;
-$i: 1;
-@each $icono in $emoticonos {
-  .custom-element-#{$i}::after {
-    @debug "Para #{$i} vale" #{$icono};
-    content: "#{$icono}";
-  }
-  $i: $i + 1;
-}
+// $i: 1;
+// @each $icono in $emoticonos {
+//   .custom-element-#{$i}::after {
+//     @debug "Para #{$i} vale" #{$icono};
+//     content: "#{$icono}";
+//   }
+//   $i: $i + 1;
+// }
 // $i: 1;
 // @while $i < 3 {
 //   .custom-element-#{$i} {
@@ -49,8 +49,8 @@ $i: 1;
 //   }
 //   $i: $i + 1;
 // }
-@for $i from 1 to 2 {
-  .custom-element-#{$i} {
-    font-size: 10px * $i;
-  }
-}
+// @for $i from 1 to 2 {
+//   .custom-element-#{$i} {
+//     font-size: 10px * $i;
+//   }
+// }
