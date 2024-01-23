@@ -1,0 +1,28 @@
+// Custom.scss
+// Option A: Incluimos todo Bootstrap
+// Incluimos cualquier variable por defecto a sobreescribir aquí
+
+// Definimos las variables que queremos sobreescribir/reemplazar
+$my-primary: #f5cba7;
+$my-danger: #f1948a;
+$my-success: #76d7c4;
+$my-warning: #f7dc6f;
+
+// Estas variables definidas pasamos a insertarlas en el mapa de colores de bootstrap
+$theme-colors: (
+  "primary": $my-primary,
+  "danger": $my-danger,
+  "success": $my-success,
+  "warning": $my-warning,
+);
+
+// Me creo un nuevo color
+$lila: (
+  "lila": #d2b4de,
+);
+
+// Lo añadimos al mapa de colores para tenerlo disponible
+$theme-colors: map-merge($theme-colors, $lila);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+// Añade el resto del código customizado aquí
